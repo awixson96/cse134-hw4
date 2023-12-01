@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF=8">
+  <title>Aaron Wixson - Portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="project1.html">Project 1</a></li>
+      <li><a href="project2.html">Project 2</a></li>
+      <li><a href="project3.html">Project 3</a></li>
+      <li><a href="project4.html">Project 4</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main class="main">
+    <h1>Send me a message!</h1>
+    <form id="form" action="https://httpbin.org/post" method="post">
+
+      <label for="name">name</label><br>
+      <input type="text" autocomplete="name" id="name" name="name" required /><br>
+      <p class="oops">Please enter your name.</p>
+
+      <label for="email">email</label><br>
+      <input type="email" autocomplete="email" id="email" name="email" /><br>
+      <p class="oops">Please enter your email.</p>
+
+      <label for="comments">message:</label><br>
+      <textarea id="message" name="message" maxlength="200" placeholder="What brought you to my website? &#128515"
+        style="height: 10rem;"></textarea><br>
+      <p class="oops">Please enter your message.</p>
+
+      <output name="info-message" form="contact-form" id="info">200/200</output><br>
+      <button type="submit">submit</button>
+      <input type="hidden" name="possible_bot" value="true">
+    </form>
+    <output name="error-messsage" form="contact-form" id="error" hidden="true">Please check required fields</output>
+  </main>
+  <a href="#top">Scroll to Top</a>
+  <footer class="footer">
+    <ul class="foot">
+      <li>Made with Love and VS Code by Aaron Wixson</li>
+      <li>CSE 134 FA23</li>
+    </ul>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
